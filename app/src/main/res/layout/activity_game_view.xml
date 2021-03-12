@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameView">
+
+    <view
+        android:id="@+id/gview"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <view
+        android:id="@+id/v1"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/v4"
+        app:layout_constraintEnd_toStartOf="@+id/v2"
+        app:layout_constraintStart_toStartOf="@+id/gview"
+        app:layout_constraintTop_toTopOf="@+id/gview" />
+
+    <view
+        android:id="@+id/v2"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/v5"
+        app:layout_constraintEnd_toEndOf="@+id/gview"
+        app:layout_constraintStart_toStartOf="@+id/gview"
+        app:layout_constraintTop_toTopOf="@+id/gview" />
+
+    <view
+        android:id="@+id/v3"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/v6"
+        app:layout_constraintEnd_toEndOf="@+id/gview"
+        app:layout_constraintStart_toEndOf="@+id/v2"
+        app:layout_constraintTop_toTopOf="@+id/gview" />
+
+    <view
+        android:id="@+id/v4"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gview"
+        app:layout_constraintEnd_toStartOf="@+id/v5"
+        app:layout_constraintStart_toStartOf="@+id/gview"
+        app:layout_constraintTop_toTopOf="@+id/gview" />
+
+    <view
+        android:id="@+id/v5"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gview"
+        app:layout_constraintEnd_toEndOf="@+id/gview"
+        app:layout_constraintStart_toStartOf="@+id/gview"
+        app:layout_constraintTop_toTopOf="@+id/gview" />
+
+    <view
+        android:id="@+id/v6"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gview"
+        app:layout_constraintEnd_toEndOf="@+id/gview"
+        app:layout_constraintStart_toEndOf="@+id/v5"
+        app:layout_constraintTop_toTopOf="@+id/gview" />
+
+    <view
+        android:id="@+id/v7"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gview"
+        app:layout_constraintEnd_toStartOf="@+id/v8"
+        app:layout_constraintStart_toStartOf="@+id/gview"
+        app:layout_constraintTop_toBottomOf="@+id/v4" />
+
+    <view
+        android:id="@+id/v8"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/gview"
+        app:layout_constraintStart_toStartOf="@+id/gview"
+        app:layout_constraintTop_toBottomOf="@+id/v5" />
+
+    <view
+        android:id="@+id/v9"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gview"
+        app:layout_constraintEnd_toEndOf="@+id/gview"
+        app:layout_constraintStart_toEndOf="@+id/v8"
+        app:layout_constraintTop_toBottomOf="@+id/v6" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/gview"
+        app:layout_constraintStart_toStartOf="@+id/gview"
+        app:layout_constraintTop_toTopOf="@+id/gview" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/v5"
+        app:layout_constraintEnd_toEndOf="@+id/gview"
+        app:layout_constraintStart_toStartOf="@+id/gview"
+        app:layout_constraintTop_toTopOf="@+id/gview" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/gview"
+        app:layout_constraintEnd_toEndOf="@+id/gview"
+        app:layout_constraintStart_toStartOf="@+id/gview"
+        app:layout_constraintTop_toBottomOf="@+id/v2" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/gview"
+        app:layout_constraintEnd_toEndOf="@+id/gview"
+        app:layout_constraintStart_toStartOf="@+id/gview" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="1dp"
+        android:layout_height="240dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/gview"
+        app:layout_constraintStart_toStartOf="@+id/gview"
+        app:layout_constraintTop_toTopOf="@+id/gview" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="1dp"
+        android:layout_height="240dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/gview"
+        app:layout_constraintEnd_toEndOf="@+id/v5"
+        app:layout_constraintStart_toStartOf="@+id/gview"
+        app:layout_constraintTop_toTopOf="@+id/gview" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="1dp"
+        android:layout_height="240dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/gview"
+        app:layout_constraintEnd_toEndOf="@+id/gview"
+        app:layout_constraintTop_toTopOf="@+id/gview" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="1dp"
+        android:layout_height="240dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/gview"
+        app:layout_constraintEnd_toEndOf="@+id/gview"
+        app:layout_constraintStart_toEndOf="@+id/v4"
+        app:layout_constraintTop_toTopOf="@+id/gview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
